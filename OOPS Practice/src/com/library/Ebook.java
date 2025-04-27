@@ -3,9 +3,10 @@ package com.library;
 public class Ebook extends Books{
     private String downloadLink;
 
-    public Ebook(String title, String author, String ISBN, int no_of_copies)
+    public Ebook(String title, String author, String ISBN, int no_of_copies, String downloadlink)
     {
         super(title, author,ISBN, no_of_copies);
+        this.downloadLink = downloadlink;
     }
     @Override
     public void borrowBook() {

@@ -2,8 +2,10 @@ package com.library;
 
 public class AudioBook extends Books{
     private String AudioFile;
-    public AudioBook(String title, String author, String ISBN, int no_of_copies) {
+
+    public AudioBook(String title, String author, String ISBN, int no_of_copies, String AudioFile) {
         super(title, author, ISBN, no_of_copies);
+        this.AudioFile = AudioFile;
     }
 
     @Override
