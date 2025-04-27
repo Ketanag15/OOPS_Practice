@@ -25,7 +25,7 @@ public class User {
     }
 
     public void viewBorrowedBooks(){
-        System.out.println(name + " has borrowed the following books");
+        System.out.println(name +" with userId : " + userId + " has borrowed the following books");
         for(Books book : borrowedBooks){
             book.getBookInfo();
         }
